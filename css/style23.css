@@ -43,7 +43,7 @@ body {
 }
 
 .h1lessontext {
-    font-size: .8rem;
+    font-size: .4rem;
     text-align: center;
     margin: 0px 0 0px 0;
     padding: 5px;
@@ -55,13 +55,31 @@ body {
 /* || BLOCKS */
 /* aka components */
 
+/* .btn-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+} */
+
+.header {
+    background-color: var(--HEADER-BGCOLOR);
+    color: var(--HEADER-COLOR);
+    padding: 1rem 1rem 0.5rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
 /* .btn {
     min-width: 100px;
     min-height: 100px;
     border-radius: 15px;
 } */
 
-.btn {
+/* .btn {
     width: 300px;
     height: 300px;
     border-radius: 15px;
@@ -70,16 +88,58 @@ body {
     align-items: center;
     border: 2px solid black;
     background-color: white;
+} */
+
+
+
+/* || ELEMENTS */
+/* No standalone meaning - semantically tied to the block */
+/* Does not represent structure, NOT header__nav__btn */
+
+.header__btn {
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
 }
 
-.btn-container {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+
+/* || MODIFIERS */
+/* incremental style changes */
+
+/* Blocks with modifiers */
+/* .btn--secondary {
+    background-color: yellow;
 }
 
+.btn--lean {
+    transform: skewX(-10deg);
+}
 
-¸
+.btn--border-lg {
+    border: 5px solid green;
+} */
+
+.header__btn--secondary {
+    background-color: yellow;
+}
+
+.header__btn--lean {
+    transform: skewX(-10deg);
+}
+
+.header__btn--border-lg {
+    border: 5px solid whitesmoke;
+}
+
+/* Elements with modifiers */
+/* .header__btn--secondary {
+    background-color: yellow;
+}
+
+.header__btn--lean {
+    transform: skewX(-10deg);
+}
+
+.header__btn--border-lg {
+    border: 5px solid whitesmoke;
+} */
